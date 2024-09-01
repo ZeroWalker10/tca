@@ -2,10 +2,10 @@
 # coding=utf-8
 model_names = ['resnet50', 'densenet121', 'wide_resnet50_2', 'vgg19']
 victim_model_names = ['resnet50', 'vgg19', 'inception_v3', 'densenet121', 'wide_resnet50_2']
-victim_datasets = [('imagenet', '/home/zero/zero/split_dp/dataset/imagenet/new_adv_1k')]
-feature_libraries = [('imagenet', '/home/zero/zero/split_dp/dataset/imagenet/feature_library')]
-clean_libraries = ('imagenet', '/home/zero/zero/split_dp/dataset/imagenet/train_by_class')
-eps_output_path = '/home/zero/zero/split_dp/dataset/imagenet/teps_outputs'
+victim_datasets = [('imagenet', '~/zero/split_dp/dataset/imagenet/new_adv_1k')]
+feature_libraries = [('imagenet', '~/zero/split_dp/dataset/imagenet/feature_library')]
+clean_libraries = ('imagenet', '~/zero/split_dp/dataset/imagenet/train_by_class')
+eps_output_path = '~/zero/split_dp/dataset/imagenet/teps_outputs'
 attack_book = './new_attack_book_1k.json'
 
 eps_evaluation_file = 'evaluation/teps_evaluation.csv'
